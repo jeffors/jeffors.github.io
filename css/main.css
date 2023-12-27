@@ -1,0 +1,267 @@
+@font-face {
+    font-family: 'Bahnschrift';
+    src: url(fonts/Bahnschrift.ttf);
+}
+
+
+.container {
+    max-width: 1570px;
+    margin: 0 auto;
+    font-family: 'Bahnschrift';
+    font-size: 24px;
+}
+
+.header-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px;
+    margin-bottom: 10px;
+
+}
+
+.nav-list {
+    display: flex;
+    justify-content: space-between;
+
+    gap: 20px;
+    list-style-type: none;
+}
+
+.nav-list a {
+    color: black;
+}
+
+.logo {
+    font-size: 50px;
+    font-weight: bold;
+}
+
+.search {
+    border: 2px solid black;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.right-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}
+
+.section-nav {
+    display: flex;
+    justify-content: space-around;
+    background-color: #212635;
+    color: white;
+    padding: 10px;
+    font-weight: normal;
+    margin-bottom: 20px;
+}
+
+.section-nav a {
+    color: white;
+}
+
+.product-title {
+    font-size: 30px;
+}
+
+.product-author {
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: max-content 1fr 1fr;
+    gap: 30px 30px;
+    grid-auto-flow: row;
+    grid-template-areas:
+        "cover score info-sect"
+        "critic-reviews critic-reviews info-sect"
+        "user-reviews user-reviews best-lists";
+}
+
+.info-sect {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: max-content 1fr;
+    gap: 30px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+        "info"
+        "track-list";
+    grid-area: info-sect;
+}
+
+.info {
+    border: 2px solid black;
+    padding: 25px;
+    border-radius: 5px;
+    grid-area: info;
+}
+
+.info p {
+    margin-bottom: 15px;
+}
+
+.track-list {
+    border: 2px solid black;
+    padding: 25px;
+    border-radius: 5px;
+    grid-area: track-list;
+    list-style-type: none;
+}
+
+.track-list p {
+    font-weight: lighter;
+}
+
+.track-list-flex {
+    display: flex;
+    justify-content: space-around;
+}
+
+.track-list li {
+    margin-bottom: 5px;
+}
+
+.track-length {
+    font-family: 'Cascadia Code';
+}
+
+.cover {
+    border: 4px solid #7400d7;
+    
+    grid-area: cover;
+}
+
+.score {
+    border: 2px solid black;
+    padding: 25px;
+    border-radius: 5px;
+    grid-area: score;
+}
+
+.critic-reviews {
+    border: 2px solid black;
+    padding: 25px;
+    border-radius: 5px;
+    grid-area: critic-reviews;
+}
+
+.user-reviews {
+    border: 2px solid black;
+    padding: 25px;
+    border-radius: 5px;
+    grid-area: user-reviews;
+}
+
+.best-lists {
+    border: 2px solid black;
+    padding: 25px;
+    border-radius: 5px;
+    grid-area: best-lists;
+    list-style-type: none;
+}
+
+.critic-score {
+    font-size: 48px;
+    width: 100px;
+    aspect-ratio: 1/1;
+    padding: 15px;
+    text-align: center;
+    border: 4px solid green;
+}
+
+.user-score {
+    font-size: 48px;
+    width: 100px;
+    height: 100px;
+    aspect-ratio: 1/1;
+    padding: 15px;
+    padding-top: 20px;
+    text-align: center;
+    border: 4px solid green;
+    border-radius: 50%;
+}
+
+.grid-header {
+    margin-bottom: 15px;
+}
+
+.score-block {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    margin-bottom: 25px;
+}
+
+.btn {
+    background-color: #212635;
+    width: 100%;
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.best-list-flex {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.best-list-flex li {
+    margin-bottom: 5px;
+}
+
+.read-more-link {
+    text-decoration: underline;
+    font-weight: bolder;
+    ;
+}
+
+.review-block {
+    display: flex;
+    justify-content: space-between;
+}
+
+.grid-index-template {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    gap: 0px 30px;
+    grid-auto-flow: row;
+    
+}
+
+.grid-index-template img {
+    margin-bottom:10px;
+}
+
+.desc {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.index-critic-score {
+    
+    /* width: 100px; */
+    aspect-ratio: 1/1;
+    padding: 15px;
+    text-align: center;
+    border: 4px solid green;
+}
+
+.upcoming-flex { display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    gap: 0px 30px;
+    grid-auto-flow: row;  }
+
+.upcoming-flex img { margin-bottom:10px; }  
+
